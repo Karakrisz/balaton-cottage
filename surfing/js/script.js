@@ -7,10 +7,10 @@ $(window).on("load", function () {
 
     $('.side-menu').removeClass('hidden');
 
-    setTimeout(function(){
+    setTimeout(function () {
         $('.loader').fadeOut();
 
-     }, 1000);
+    }, 1000);
 
     $('.navbar-collapse .navbar-nav .nav-link:nth-child(1)').addClass('active');
     $('.navbar-collapse .navbar-nav .nav-link:nth-child(2)').removeClass('active');
@@ -26,8 +26,7 @@ jQuery(function ($) {
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 260) { // Set position from top to add class
             $('header').addClass('header-appear');
-        }
-        else {
+        } else {
             $('header').removeClass('header-appear');
         }
     });
@@ -44,20 +43,24 @@ jQuery(function ($) {
 
     //Click event to scroll to top
     $(document).on('click', '.scroll-top-arrow', function () {
-        $('html, body').animate({scrollTop: 0}, 800);
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
         return false;
     });
 
     $(".scroll").on("click", function (event) {
         event.preventDefault();
         $("html,body").animate({
-            scrollTop: $(this.hash).offset().top - 60}, 1200);
+            scrollTop: $(this.hash).offset().top - 60
+        }, 1200);
     });
 
     $(".slider-btn").on("click", function (event) {
         event.preventDefault();
         $("html,body").animate({
-            scrollTop: $(this.hash).offset().top - 60}, 1200);
+            scrollTop: $(this.hash).offset().top - 60
+        }, 1200);
     });
 
     /* ===================================
@@ -201,11 +204,11 @@ jQuery(function ($) {
             },
             480: {
                 items: 1,
-                autoplay:false,
+                autoplay: false,
             },
             320: {
                 items: 1,
-                autoplay:false,
+                autoplay: false,
             },
         }
     });
@@ -219,7 +222,7 @@ jQuery(function ($) {
         items: 4,
         autoplay: 1500,
         smartSpeed: 1500,
-        autoplayHoverPause: true,
+        autoplayHoverPause: false,
         slideBy: 1,
         loop: false,
         margin: 10,

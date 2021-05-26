@@ -1,0 +1,22 @@
+/******************** HEADER start **********************/
+
+header a.logo img {
+    max-width: 155px;
+    vertical-align: sub;
+    height: 123px;
+}
+
+.header-appear .navbar-top-default {
+    background: white !important;
+}
+
+.header-appear .navbar-simple .navbar-nav .nav-link {
+    color: #81a9aa !important;
+}
+
+/******************** PORTFOLIO start **********************/
+
+.port-img__img {
+    object-fit: cover;
+    height: 400px;
+}
